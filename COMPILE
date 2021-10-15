@@ -1,0 +1,12 @@
+
+gcc -c csigfun.c
+gfortran -O3 -ffixed-line-length-none -c *.fpp
+gfortran -o lanthanide *.o  (-static)
+
+ - OR -
+
+g77 -O3 -ffixed-line-length-none -c *.fpp
+g77 -o lanthanide *.o
+
+NOTE: Link with the -static option for a portable executable
+NOTE: NEVER turn on -ffast-math!!!
